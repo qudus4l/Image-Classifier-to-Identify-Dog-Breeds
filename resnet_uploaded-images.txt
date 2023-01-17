@@ -5,10 +5,10 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                   gecko_02.jpg  label:                      gecko
- 2 key:              Coffee_mug_01.jpg  label:                 coffee mug
- 3 key:                     Dog_02.jpg  label:                        dog
- 4 key:                     Dog_01.jpg  label:                        dog
+ 1 key:                   Dog_02-2.jpg  label:                        dog
+ 2 key:                   gecko_02.jpg  label:                      gecko
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
 
      MATCH:
 
@@ -17,11 +17,11 @@ Real:                 coffee mug   Classifier:                     coffee mug
 
  NOT A MATCH:
 
+                  Dog_02-2.jpg: 
+Real:                        dog   Classifier:    boston bull, boston terrier
+
                   gecko_02.jpg: 
 Real:                      gecko   Classifier: african chameleon, chamaeleo chamaeleon
-
-                    Dog_02.jpg: 
-Real:                        dog   Classifier:    boston bull, boston terrier
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier:           basset, basset hound
@@ -36,13 +36,13 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
+                  Dog_02-2.jpg: 
+Real:                        dog   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
                   gecko_02.jpg: 
 Real:                      gecko   Classifier: african chameleon, chamaeleo chamaeleon  
 PetLabelDog: 0  ClassLabelDog: 0
-
-                    Dog_02.jpg: 
-Real:                        dog   Classifier:    boston bull, boston terrier  
-PetLabelDog: 1  ClassLabelDog: 1
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier:           basset, basset hound  
@@ -63,11 +63,11 @@ Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 N Images            :   4
 N Dog Images        :   2
 N Not-Dog Images    :   2
-summary statistics (percentages)
-pct_match = 25.0 %
-pct_correct_dogs = 100.0 %
-pct_correct_breed = 0.0 %
-pct_correct_notdogs = 100.0 %
+ 
+pct_match: 25.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
 
 INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:    boston bull, boston terrier
